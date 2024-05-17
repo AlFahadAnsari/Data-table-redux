@@ -24,9 +24,8 @@ const SideBar = () => {
         e.preventDefault();
         dispatch(addData(formData));
         setFormData({ name: '', email: '',number:'',address:'' });
-        setTimeout(() => {
+    
             toast.success('Data add'); 
-        }, 500);
         
       };
 

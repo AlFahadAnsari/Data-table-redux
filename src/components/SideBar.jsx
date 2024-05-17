@@ -36,7 +36,7 @@ const SideBar = () => {
             <div className="bg-gray-800 w-64 h-screen">
                 <h1 className='className="block text-white font-bold mt-7 text-center text-2xl p-4 md:text-3xl'>DashBoard</h1>
                 <div className="p-4 mt-10">
-                    <Link to={'/'} href="#" className="block text-white font-bold hover:bg-blue-600" >Form</Link>
+                    <Link to={'/'} href="#" className="block text-white font-bold my-5 hover:bg-blue-600" >Form</Link>
 
                     <Link to={'/user'} href="#" className="block text-white font-bold hover:bg-blue-600" >User data</Link>
 

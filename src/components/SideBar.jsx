@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addData } from './Redux/Reducer';
+import toast from 'react-hot-toast'
 
 
 
@@ -23,6 +24,10 @@ const SideBar = () => {
         e.preventDefault();
         dispatch(addData(formData));
         setFormData({ name: '', email: '',number:'',address:'' });
+        setTimeout(() => {
+            toast.success('Data add'); 
+        }, 500);
+        
       };
 
 
